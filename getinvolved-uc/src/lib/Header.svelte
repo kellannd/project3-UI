@@ -1,5 +1,16 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+/>
+
+<script>
+    import logo from '../assets/image.png'
+</script>
+
 <div class="header">
-    <h1>ScheduleUC</h1>
+    <div>
+        <img src={logo} class="logo"/>
+    </div>
     <i class="bi bi-person-circle user-icon"></i>
 </div>
 
@@ -22,4 +33,11 @@
     padding-top: 20px;
     padding-right: 20px;
 }
+
+.logo {
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
 </style>
