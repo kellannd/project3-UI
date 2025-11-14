@@ -40,7 +40,7 @@
         <input type="text" id="online-link" name="online-link" style="width: 500px"><br>
 
 
-        <label for="online-instructions">Online Location Instructions for Attendees</label><br>
+        <label for="online-instructions">Online Location Instructions for Attendees:</label><br>
         <textarea id="online-instructions" name="online-instructions" style="width: 500px"></textarea>
 
 
