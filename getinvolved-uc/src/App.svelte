@@ -1,6 +1,7 @@
 <script>
   import EventForm from "./lib/EventForm.svelte";
   import Header from "./lib/Header.svelte";
+  import LocationForm from "./lib/LocationForm.svelte";
   import Sidebar from "./lib/Sidebar.svelte";
 
   let selectedButton = $state("home");
@@ -8,10 +9,14 @@
   import acmwlogo from "./assets/acmw.jpg";
 
   let createEvent = $state(false);
+
+  let locationForm = $state(false);
+
+  let onCampus = $state("oncampus")
 </script>
 
 <main>
-  <Sidebar bind:selectedButton bind:createEvent/>
+  <Sidebar bind:selectedButton bind:createEvent />
   <Header />
 
   {#if selectedButton === "home"}
@@ -45,27 +50,21 @@
     </div>
   {:else if selectedButton === "events"}
     <div class="view">
-      {#if createEvent}
-        <div class="view">
-          <button
-          class="close-btn"
-            onclick={() => {
-              createEvent = false;
-            }}><i class="bi bi-x-lg"></i></button
-          ><br />
-          <div style="  display: flex; justify-content: center;">
-            <EventForm />
-          </div>
-        </div>
-      {:else}
-        <h1>events</h1>
+      <div class="view">
+        {#if locationForm}
+            <LocationForm bind:locationForm bind:onCampus/>
+        {:else if createEvent}
+          <EventForm bind:locationForm bind:createEvent />
+        {:else}
+          <h1>events</h1>
 
-        <button
-          onclick={() => {
-            createEvent = true;
-          }}>Create New Event</button
-        >
-      {/if}
+          <button
+            onclick={() => {
+              createEvent = true;
+            }}>Create New Event</button
+          >
+        {/if}
+      </div>
     </div>
   {:else if selectedButton === "orgs"}
     <div class="view">
@@ -128,11 +127,11 @@
   .close-btn {
     background-color: transparent;
     border: none;
-        position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
     padding-top: 110px;
     padding-right: 30px;
-    font-size: 30px
+    font-size: 30px;
   }
 </style>

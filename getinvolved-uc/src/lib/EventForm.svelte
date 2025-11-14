@@ -1,8 +1,20 @@
 <script>
-  let orgSelect = "";
-</script>
+      let orgSelect = "";
 
+      export let locationForm;
+
+      export let createEvent;
+
+</script>
+<button
+          class="close-btn"
+            onclick={() => {
+              createEvent = false;
+            }}><i class="bi bi-x-lg"></i></button
+          ><br />
+<div style=" display: flex; justify-content: center;">
 <div>
+
   <h1>Create Event</h1>
 
   <div class="basic-details">
@@ -113,11 +125,14 @@
       </div>
     </div>
 
-    <button>Location</button>
+    <button onclick={() => {locationForm = true
+    }}>Location</button>
   </div>
-</div>
+  </div>
+  </div>
 
 <style>
+    @import "../app.css";
   .date-time-input {
     width: 200px;
     font-size: 25px;
@@ -154,5 +169,16 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
+  }
+
+    .close-btn {
+    background-color: transparent;
+    border: none;
+        position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 110px;
+    padding-right: 30px;
+    font-size: 30px
   }
 </style>
