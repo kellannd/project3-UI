@@ -1,6 +1,10 @@
 <script>
   import EventForm from "./lib/EventForm.svelte";
+  import Events from "./lib/Events.svelte";
   import Header from "./lib/Header.svelte";
+  import LocationForm from "./lib/LocationForm.svelte";
+  import News from "./lib/News.svelte";
+  import Orgs from "./lib/Orgs.svelte";
   import Sidebar from "./lib/Sidebar.svelte";
 
   let selectedButton = $state("home");
@@ -8,10 +12,20 @@
   import acmwlogo from "./assets/acmw.jpg";
 
   let createEvent = $state(false);
+
+  let locationForm = $state(false);
+
+  let onCampus = $state("oncampus")
+
+  let location = $state({
+    title: "",
+    address: "",
+    city: ""
+  })
 </script>
 
 <main>
-  <Sidebar bind:selectedButton bind:createEvent/>
+  <Sidebar bind:selectedButton bind:createEvent />
   <Header />
 
   {#if selectedButton === "home"}
@@ -23,10 +37,10 @@
             <div class="org">
               <img
                 src={acmwlogo}
-                style="height: 80px; margin-top: 10px; margin-left: 10px; padding-right: 10px"
+                class="my-org-logo"
               />
-              <div style="display: flex; align-items: center;">
-                <h2 style="font-weight: lighter">
+              <div class="align-disp">
+                <h2 class="my-org-text">
                   University of Cincinnati ACM-W Student Chapter
                 </h2>
               </div>
@@ -38,6 +52,14 @@
           </div>
         </div>
 
+        <div>
+          <h1>Events Hosted by My Organizations</h1>
+
+          <div class="orgs-events-list">
+
+          </div>
+        </div>
+
         <div class="news">
           <h1>Latest News</h1>
         </div>
@@ -45,94 +67,54 @@
     </div>
   {:else if selectedButton === "events"}
     <div class="view">
-      {#if createEvent}
-        <div class="view">
-          <button
-          class="close-btn"
-            onclick={() => {
-              createEvent = false;
-            }}><i class="bi bi-x-lg"></i></button
-          ><br />
-          <div style="  display: flex; justify-content: center;">
-            <EventForm />
-          </div>
-        </div>
-      {:else}
-        <h1>events</h1>
 
+      <div class="form-view">
+
+        {#if locationForm}
+            <LocationForm bind:locationForm bind:onCampus bind:location/>
+        {:else if createEvent}
+          <EventForm bind:locationForm bind:createEvent bind:location />
+        {:else}
         <button
-          onclick={() => {
-            createEvent = true;
-          }}>Create New Event</button
-        >
-      {/if}
+          class="create-event-btn"
+            onclick={() => {
+              createEvent = true;
+            }}>Create New Event</button
+          ><br>
+        <h1 style="margin-top: -20px">Events</h1>
+          <div>
+            <Events />
+          </div>
+        {/if}
+    </div>
     </div>
   {:else if selectedButton === "orgs"}
     <div class="view">
-      <h1>Orgs</h1>
+      <div>
+      <h1 class="org-title">Organizations</h1>
+      <Orgs />
+    </div>
     </div>
   {:else if selectedButton === "news"}
     <div class="view">
-      <h1>news</h1>
+      <div class="news-view">
+        <h1>News</h1>
+
+
+      </div>
+      <News />
     </div>
   {:else}
     <div class="view">
-      <h1>forms</h1>
+      <div class="links-view">
+      <h1>Forms and Links</h1>
+
+      <h2 class="forms-and-links-text">This page would contain the same links and forms as the original GetInvolved UI.</h2>
+    </div>
     </div>
   {/if}
 </main>
 
 <style>
   @import "./app.css";
-
-  .view {
-    width: calc(100% - 100px);
-    height: calc(100% - 80px);
-    padding-top: 80px;
-    margin-left: 100px;
-  }
-
-  .home-view {
-    padding-left: 80px;
-    padding-top: 50px;
-  }
-
-  .my-orgs {
-    padding-bottom: 50px;
-  }
-
-  .orgs-list {
-    display: flex;
-  }
-
-  .org {
-    /* border-width: 1px;
-    border-color: black;
-    border-style: solid; */
-    box-shadow: 0px 0px 2px black;
-    background-color: white;
-    width: 400px;
-    height: 100px;
-    margin-right: 40px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto;
-    font-weight: lighter;
-    margin-top: 20px;
-  }
-
-  .org:hover {
-    box-shadow: 0px 0px 5px black;
-  }
-
-  .close-btn {
-    background-color: transparent;
-    border: none;
-        position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 110px;
-    padding-right: 30px;
-    font-size: 30px
-  }
 </style>

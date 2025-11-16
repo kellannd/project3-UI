@@ -1,123 +1,168 @@
 <script>
   let orgSelect = "";
+
+  export let locationForm;
+
+  export let createEvent;
+
+  export let location;
 </script>
 
-<div>
-  <h1>Create Event</h1>
-
-  <div class="basic-details">
-    <div
-      style="padding-left: 50px; padding-right: 50px; padding-top: 25px; padding-bottom: 25px"
-    >
-      <label for="event-title"><span class="req">*</span>Event Title:</label><br
-      />
-      <input
-        type="text"
-        id="event-title"
-        name="event-title"
-        style="width: 500px"
-      /><br /><br /><br />
-
-      <label for="org">Who is this event for?:</label><br />
-      <select
-        id="org"
-        name="org"
-        style="width: 500px; font-size: 20px"
-        bind:value={orgSelect}
-        onchange={() => {
-          console.log(orgSelect);
-        }}
+<button
+  class="close-btn"
+  onclick={() => {
+    createEvent = false;
+  }}><i class="bi bi-x-lg"></i></button
+><br />
+<div class="flex-disp">
+  <div>
+    <div class="basic-details">
+      <div
+        style="padding-left: 50px; padding-right: 50px; padding-top: 25px; padding-bottom: 25px"
       >
-        <option value="studyroom">Personal Use/Study Room</option>
-        <option value="acmw"
-          >University of Cincinnati ACM-W Student Chapter</option
+        <label for="event-title"><span class="req">*</span>Event Title:</label
+        ><br />
+        <input
+          type="text"
+          id="event-title"
+          name="event-title"
+          style="width: 500px"
+        /><br /><br /><br />
+
+        <label for="org">Who is this event for?:</label><br />
+        <select
+          id="org"
+          name="org"
+          style="width: 500px; font-size: 20px"
+          bind:value={orgSelect}
+          onchange={() => {
+            console.log(orgSelect);
+          }}
         >
-      </select><br /><br /><br />
+          <option value="studyroom">Personal Use/Study Room</option>
+          <option value="acmw"
+            >University of Cincinnati ACM-W Student Chapter</option
+          >
+        </select><br /><br /><br />
 
-      <label for="numAtt">Expected Number in Attendance:</label><br>
-      <input type="number" id="numAtt" name="numAtt" style="width: 500px"><br><br><br>
-
-      {#if orgSelect && orgSelect != "studyroom"}
-        <div>
-          <input type="checkbox" id="display" name="display" />
-          <label for="display">Make Event Private</label><br /><br /><br />
-
-          <label for="catagory">Event Catagory:</label><br />
-          <select id="catagory" name="catagory" style="width: 500px">
-            <option value=""></option>
-            <option value="1">Catagory 1</option>
-          </select><br /><br /><br />
-
-          <label for="perks">Perks:</label>
-          <select id="perks" name="perks" style="width:500px">
-            <option value=""></option>
-            <option value="food">Free Food</option>
-            <option value="merch">Free Merch</option>
-          </select><br /><br /><br />
-
-
-      <label for="event-description"
-        ><span class="req">*</span>Description:</label
-      ><br />
-      <textarea style="width: 500px; height: 300px"></textarea><br /><br /><br
-      />
-           </div>
-      {/if}
-    </div>
-  </div>
-
-  <div class="date-time">
-    <h2 style="font-weight:lighter;">Time and Place</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; padding: 20px">
-      <div>
-        <label for="start-date"><span class="req">*</span>Start Date:</label><br
-        />
-
+        <label for="numAtt">Expected Number in Attendance:</label><br />
         <input
-          type="date"
-          id="start-date"
-          name="start-date"
-          class="date-time-input"
-          style="margin-bottom: 20px"
-        /><br />
+          type="number"
+          id="numAtt"
+          name="numAtt"
+          style="width: 500px"
+        /><br /><br /><br />
 
-        <label for="start-time"><span class="req">*</span>Start Time:</label><br
-        />
-        <input
-          type="time"
-          id="start-time"
-          name="start-time"
-          class="date-time-input"
-        />
-      </div>
+        {#if orgSelect && orgSelect != "studyroom"}
+          <div>
+            <input type="checkbox" id="display" name="display" />
+            <label for="display">Make Event Private</label><br /><br /><br />
 
-      <div>
-        <label for="end-date"><span class="req">*</span>End Date:</label><br />
+            <label for="catagory">Event Catagory:</label><br />
+            <select id="catagory" name="catagory" style="width: 500px">
+              <option value=""></option>
+              <option value="1">Catagory 1</option>
+            </select><br /><br /><br />
 
-        <input
-          type="date"
-          id="end-date"
-          name="end-date"
-          class="date-time-input"
-          style="margin-bottom: 20px"
-          required
-        /><br />
+            <label for="perks">Perks:</label>
+            <select id="perks" name="perks" style="width:500px">
+              <option value=""></option>
+              <option value="food">Free Food</option>
+              <option value="merch">Free Merch</option>
+            </select><br /><br /><br />
 
-        <label for="end-time"><span class="req">*</span>End Time:</label><br />
-        <input
-          type="time"
-          id="end-time"
-          name="end-time"
-          class="date-time-input"
-        />
+            <label for="event-description"
+              ><span class="req">*</span>Description:</label
+            ><br />
+            <textarea style="width: 500px; height: 300px"></textarea><br /><br
+            /><br />
+          </div>
+        {/if}
       </div>
     </div>
 
-    <button>Location</button>
+    <div class="date-time">
+      <h2 style="font-weight:lighter;">Time and Place</h2>
+      <div class="flex-disp">
+        <div
+          style="display: grid; grid-template-columns: 1fr 1fr; padding: 20px"
+        >
+          <div style="padding-right: 20px;">
+            <label for="start-date"><span class="req">*</span>Start Date:</label
+            ><br />
+
+            <input
+              type="date"
+              id="start-date"
+              name="start-date"
+              class="date-time-input"
+              style="margin-bottom: 20px"
+            /><br />
+
+            <label for="start-time"><span class="req">*</span>Start Time:</label
+            ><br />
+            <input
+              type="time"
+              id="start-time"
+              name="start-time"
+              class="date-time-input"
+            />
+          </div>
+
+          <div style="padding-left: 20px">
+            <label for="end-date"><span class="req">*</span>End Date:</label><br
+            />
+
+            <input
+              type="date"
+              id="end-date"
+              name="end-date"
+              class="date-time-input"
+              style="margin-bottom: 20px"
+              required
+            /><br />
+
+            <label for="end-time"><span class="req">*</span>End Time:</label><br
+            />
+            <input
+              type="time"
+              id="end-time"
+              name="end-time"
+              class="date-time-input"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        {#if location.title}
+          <div class="flex-disp">
+            <div>
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <p>{location.title}</p>
+              <p>{location.address}</p>
+              <p>{location.city}</p>
+            </div>
+          </div>
+        {/if}
+      </div>
+
+      <div style="text-align: center">
+        <button
+          class="loc-btn"
+          onclick={() => {
+            locationForm = true;
+          }}>Location</button
+        >
+      </div>
+    </div>
   </div>
 </div>
 
 <style>
+  @import "../app.css";
   .date-time-input {
     width: 200px;
     font-size: 25px;
@@ -136,8 +181,9 @@
     border-width: 1px;
     border-color: black;
     width: 600px;
-    height: 400px;
+    height: auto;
     padding: 20px;
+    margin-bottom: 100px;
   }
 
   .basic-details {
@@ -145,7 +191,7 @@
     border-width: 1px;
     border-color: black;
     width: 600px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
   }
 
   input,
@@ -154,5 +200,20 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 110px;
+    padding-right: 30px;
+    font-size: 30px;
+  }
+
+  .loc-btn {
+    padding: 10px;
   }
 </style>
