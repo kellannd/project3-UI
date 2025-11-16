@@ -1,11 +1,13 @@
 <script>
   import EventForm from "./lib/EventForm.svelte";
   import Events from "./lib/Events.svelte";
-  import Header from "./lib/Header.svelte";
+  //import Header from "./lib/Header.svelte";
   import LocationForm from "./lib/LocationForm.svelte";
   import News from "./lib/News.svelte";
   import Orgs from "./lib/Orgs.svelte";
   import Sidebar from "./lib/Sidebar.svelte";
+  import eventsdata from "./lib/eventsdata.js";
+
 
   let selectedButton = $state("home");
 
@@ -21,12 +23,15 @@
     title: "",
     address: "",
     city: ""
-  })
+  });
+
+  const eventId = [2];
+  const orgEvents = eventsdata.events.filter(event => eventId.includes(event.id));
 </script>
 
 <main>
   <Sidebar bind:selectedButton bind:createEvent />
-  <Header />
+  <!--<Header />-->
 
   {#if selectedButton === "home"}
     <div class="view">
@@ -55,13 +60,37 @@
         <div>
           <h1>Events Hosted by My Organizations</h1>
 
-          <div class="orgs-events-list">
+          <div style="display: flex; flex-wrap: wrap">
+          {#each orgEvents as event}
+            <div style="padding-left: 40px; padding-top: 40px">
+              <div class="event"
+              >
+                <img src={event.img} style="width: 400px; height: 250px; object-fit: cover; object-position: center;" />
+                <div style="height: 60px">
+                  <h3 style="padding: 15px">{event.title}</h3>
+                </div>
 
-          </div>
+                <p style="padding-left: 15px; padding-bottom: 10px"><i class="bi bi-calendar-event"></i>  {event.date}</p>
+                <p style="padding-left: 15px; padding-bottom: 20px"><i class="bi bi-geo-alt-fill"></i>  {event.location}</p>
+
+                <div
+                  style="display: flex; padding-top: 10px; padding-bottom: 10px ; background-color: #bcbcbc; align-items: center"
+                >
+                  <img
+                    src={event.logo}
+                    style="width: 30px; height: 30px; border-radius: 50%; margin-left: 10px; margin-right: 10px"
+                  />
+                  <p>{event.org}</p>
+                </div>
+              </div>
+            </div>
+          {/each}
+        </div>
         </div>
 
-        <div class="news">
+        <div class="news" style="padding-top: 40px;">
           <h1>Latest News</h1>
+          <div> <News /> </div>
         </div>
       </div>
     </div>
@@ -95,7 +124,7 @@
       <Orgs />
     </div>
     </div>
-  {:else if selectedButton === "news"}
+  <!-- {:else if selectedButton === "news"}
     <div class="view">
       <div class="news-view">
         <h1>News</h1>
@@ -103,7 +132,7 @@
 
       </div>
       <News />
-    </div>
+    </div>-->
   {:else}
     <div class="view">
       <div class="links-view">
