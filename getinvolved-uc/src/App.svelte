@@ -22,6 +22,102 @@
     address: "",
     city: ""
   })
+
+  let numAtt;
+
+  let roomSelection = $state("")
+
+  let availableRooms = $state()
+
+  //states for event form
+  let eventTitle = $state()
+  let eventOrg = $state()
+  let privateEvent = $state(false)
+  let eventCatagory = $state()
+  let eventPerks = $state()
+  let eventDescription = $state()
+  let startDate = $state()
+  let startTime = $state()
+  let endDate = $state()
+  let endTime = $state()
+
+  //schedule json
+  let schedule = $state({
+    "Langsam 505": [
+      {
+        date: "Monday",
+        start: "12:30PM",
+        end: "2:00PM",
+        title: "Study",
+      },
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+    ],
+    "Langsam 520": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+    ],
+    "Langsam 521": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+    ],
+    "Langsam 613": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+    ],
+    "Old Chem 518": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+    ],
+    "Swift 716": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+      {
+        date: "Wednesday",
+        start: "6:00PM",
+        end: "7:00PM",
+        title: "Club Meeting",
+      },
+    ],
+    "Swift 516": [
+      {
+        date: "Monday",
+        start: "3:30PM",
+        end: "5:30PM",
+        title: "Study",
+      },
+      {
+        date: "Tuesday",
+        start: "6:30PM",
+        end: "8:00PM",
+        title: "Club Meeting",
+      },
+    ],
+  })
 </script>
 
 <main>
@@ -71,9 +167,9 @@
       <div class="form-view">
 
         {#if locationForm}
-            <LocationForm bind:locationForm bind:onCampus bind:location/>
+            <LocationForm bind:locationForm bind:onCampus bind:location {numAtt} bind:roomSelection bind:availableRooms bind:schedule/>
         {:else if createEvent}
-          <EventForm bind:locationForm bind:createEvent bind:location />
+          <EventForm bind:locationForm bind:createEvent bind:location bind:numAtt bind:availableRooms bind:startDate bind:startTime bind:endDate bind:endTime bind:eventTitle bind:eventOrg bind:privateEvent bind:eventCatagory bind:eventPerks bind:eventDescription bind:schedule/>
         {:else}
         <button
           class="create-event-btn"

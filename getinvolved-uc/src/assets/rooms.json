@@ -1,0 +1,39 @@
+{
+    "rooms": [
+        {
+            "name": "Langsam 505",
+            "address": "Langsam Library",
+            "occ": 12
+        },
+        {
+            "name": "Langsam 520",
+            "address": "Langsam Library",
+            "occ": 2
+        },
+        {
+            "name": "Langsam 521",
+            "address": "Langsam Library",
+            "occ": 6
+        },
+        {
+            "name": "Langsam 613",
+            "address": "Langsam Library",
+            "occ": 2
+        },
+        {
+            "name": "Old Chem 518",
+            "address": "Old Chemistry Building",
+            "occ": 3
+        },
+        {
+            "name": "Swift 716",
+            "address": "Swift Hall",
+            "occ": 42
+        },
+        {
+            "name": "Swift 516",
+            "address": "Swift Hall",
+            "occ": 36
+        }
+    ]
+}
