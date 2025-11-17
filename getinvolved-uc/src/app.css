@@ -312,6 +312,10 @@ textarea {
     top: 0;
     margin-top: 105px;
     margin-right: 25px;
+    background-color:#f9fafb;
+    border-color: #2196F3;
+    color: #2196F3;
+    border-radius: 5px;
   }
 
 .my-org-text {

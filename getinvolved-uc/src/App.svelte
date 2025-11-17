@@ -242,4 +242,11 @@
 
 <style>
   @import "./app.css";
+    .event {
+        box-shadow: 0px 0px 2px black;
+    }
+
+    .event:hover {
+         box-shadow: 0px 0px 5px black;
+    }
 </style>

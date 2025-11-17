@@ -8,7 +8,7 @@
     <div style="padding-left: 40px; padding-top: 40px">
       <div class="event"
       >
-        <img src={event.img} style="width: 400px; height: 250px;" />
+        <img src={event.img} style="width: 400px; height: 250px; object-fit: cover; object-position: center;" />
         <div style="height: 60px">
           <h3 style="padding: 15px">{event.title}</h3>
         </div>
