@@ -33,7 +33,7 @@
 
   //states for event form
   let eventTitle = $state()
-  let eventOrg = $state()
+  let eventOrg = $state("studyroom")
   let privateEvent = $state(false)
   let eventCatagory = $state()
   let eventPerks = $state()
