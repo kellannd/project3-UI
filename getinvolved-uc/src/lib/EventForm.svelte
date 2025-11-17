@@ -110,8 +110,8 @@
   }
 
   function clearForms() {
-        eventTitle = "";
-    eventOrg = "";
+    eventTitle = "";
+    eventOrg = "studyroom";
     privateEvent = false;
     eventCatagory = "";
     eventPerks = "";
@@ -248,7 +248,6 @@
     </div>
 
     <div class="date-time">
-      <h2 style="font-weight:lighter;">Time and Place</h2>
       <div class="flex-disp">
         <div
           style="display: grid; grid-template-columns: 1fr 1fr; padding: 20px"
@@ -372,6 +371,7 @@
     <div style="text-align:center; margin-top: -80px; padding-bottom: 80px">
       <button
         class="add-loc-btn"
+        style="width: 300px"
         onclick={() => {
           createNewEvent();
         }}>Create Event</button
