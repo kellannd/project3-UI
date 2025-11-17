@@ -17,7 +17,7 @@
         <p style="padding-left: 15px; padding-bottom: 20px"><i class="bi bi-geo-alt-fill"></i>  {event.location}</p>
 
         <div
-          style="display: flex; padding-top: 10px; padding-bottom: 10px ; background-color: #bcbcbc; align-items: center"
+          style="display: flex; padding-top: 10px; padding-bottom: 10px ; background-color: #f3f3f3; align-items: center"
         >
           <img
             src={event.logo}

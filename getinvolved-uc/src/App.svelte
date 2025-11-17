@@ -134,7 +134,7 @@
       <div class="home-view">
         <div class="my-orgs">
           <h1>My Organizations</h1>
-          <div class="orgs-list">
+          <div class="orgs-list" style="padding-left: 20px">
             <div class="org">
               <img
                 src={acmwlogo}
@@ -156,7 +156,7 @@
         <div>
           <h1>Events Hosted by My Organizations</h1>
 
-          <div style="display: flex; flex-wrap: wrap">
+          <div style="display: flex; flex-wrap: wrap; padding-left: 40px">
           {#each orgEvents as event}
             <div style=" padding-top: 20px">
               <div class="event"
@@ -170,7 +170,7 @@
                 <p style="padding-left: 15px; padding-bottom: 20px"><i class="bi bi-geo-alt-fill"></i>  {event.location}</p>
 
                 <div
-                  style="display: flex; padding-top: 10px; padding-bottom: 10px ; background-color: #bcbcbc; align-items: center"
+                  style="display: flex; padding-top: 10px; padding-bottom: 10px ; background-color: #f3f3f3; align-items: center"
                 >
                   <img
                     src={event.logo}
