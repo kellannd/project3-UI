@@ -88,8 +88,6 @@
   @import "../app.css";
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 80px;
     background-color: white;
@@ -98,37 +96,35 @@
     border-bottom-width: 2px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     z-index: 1000;
     padding: 0 20px;
 }
 
 .user-icon {
     font-size: 40px;
-    /*position: absolute;
+    position: absolute;
     right: 0;
-    top: 0;*/
-    padding-top: 20px;
-    padding-right: 20px;
+    top: 0;
+    padding-right: 40px;
+    padding-top: 20px
 }
 
 .logo {
     height: 50px;
-    margin-top: 15px;
-    margin-left: 15px;
 }
 
-.side-left, .side-right {
+/* .side-left, .side-right {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-}
+} */
 .nav-center {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   flex-grow: 1;
+  margin-right: 250px;
 }
 .icon-div {
   display: flex;
