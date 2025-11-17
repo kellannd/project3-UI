@@ -1,9 +1,9 @@
 <script>
-  import events from "./eventsdata.js"
-  
+  import events from "./eventsdata.js";
+
 </script>
 
-<div style="display: flex; flex-wrap: wrap">
+<div style="display: flex; flex-wrap: wrap; margin-bottom: 100px">
   {#each events.events as event}
     <div style="padding-left: 40px; padding-top: 40px">
       <div class="event"

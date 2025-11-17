@@ -103,16 +103,17 @@ textarea {
   border-radius: 5px;
 }
 
-.flex-disp {
+/* .flex-disp {
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+} */
+.flex-disp {
+  display: flex;
+  justify-content: center;
 }
-
 .align-disp {
   display: flex;
   align-items: center;
@@ -140,7 +141,7 @@ textarea {
   margin-bottom: 25px;
   padding: 15px;
   box-sizing: border-box;
-  
+
 }
 
 .article-info:hover {

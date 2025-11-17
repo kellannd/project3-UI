@@ -1,7 +1,7 @@
 <script>
   import EventForm from "./lib/EventForm.svelte";
   import Events from "./lib/Events.svelte";
-  //import Header from "./lib/Header.svelte";
+//import Header from "./lib/Header.svelte";
   import LocationForm from "./lib/LocationForm.svelte";
   import News from "./lib/News.svelte";
   import Orgs from "./lib/Orgs.svelte";
@@ -62,7 +62,7 @@
 
           <div style="display: flex; flex-wrap: wrap">
           {#each orgEvents as event}
-            <div style="padding-left: 40px; padding-top: 40px">
+            <div style=" padding-top: 20px">
               <div class="event"
               >
                 <img src={event.img} style="width: 400px; height: 250px; object-fit: cover; object-position: center;" />
@@ -89,7 +89,7 @@
         </div>
 
         <div class="news" style="padding-top: 40px;">
-          <h1>Latest News</h1>
+          <h1 style="margin-bottom: 20px">Latest News</h1>
           <div> <News /> </div>
         </div>
       </div>

@@ -32,7 +32,8 @@
   };
 </script>
 
-<div class="flex-disp">
+<div class="flex-disp" style="flex-direction: column;
+  gap: 25px; max-width: 1500px">
 {#each news.news as article}
 
 <div class="article-info">
