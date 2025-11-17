@@ -1,0 +1,95 @@
+[{
+  "organizations": [
+    {
+      "id": "org1",
+      "name": "Naruto Enthusiasts",
+      "description": "A fun community celebrating Naruto, character growth, and shinobi culture.",
+      "meeting_days": "Fridays",
+      "meeting_time": "7:30 PM - 8:30 PM",
+      "email": "naruto.club@mail.uc.edu",
+      "category": "Cultural",
+      "img": "/src/assets/naruto.jpeg",
+      "President": ["Naruto Uzumaki"],
+      "Vice_President": ["Shikamaru Nara"],
+      "Advisor": ["Kakashi Hatake"],
+      "Officers": ["Sakura Haruno", "Ino Yamanaka", "Kiba Inuzuka", "Shino Aburame"],
+      "Treasurer": ["Choji Akimichi"]
+    },
+    {
+      "id": "org2",
+      "name": "Club Tennis",
+      "description": "A student-run organization for UC students who enjoy competitive and recreational tennis.",
+      "meeting_days": "Wednesdays & Sundays",
+      "meeting_time": "8:30 PM - 10:30 PM",
+      "email": "uctennis@mail.uc.edu",
+      "category": "Sport",
+      "img": "/src/assets/tennis.png",
+      "President": ["Emily Carter"],
+      "Vice_President": ["Jordan Lee"],
+      "Advisor": ["Coach Ramirez"],
+      "Officers": ["Michelle Tran", "Alex Thompson"],
+      "Treasurer": ["Noah Patel"]
+    },
+    {
+      "id": "org3",
+      "name": "Bearcat Tech Innovators",
+      "description": "A club for students interested in tech innovation, software development, and entrepreneurship.",
+      "meeting_days": "Mondays",
+      "meeting_time": "6:00 PM - 7:00 PM",
+      "email": "bearcattech@mail.uc.edu",
+      "category": "CEAS",
+      "img": "/src/assets/bti.png",
+      "President": ["Sarah Miller"],
+      "Vice_President": ["Jason Wu"],
+      "Advisor": ["Dr. Roberts"],
+      "Officers": ["Priya Shah", "Daniel Green"],
+      "Treasurer": ["Brandon Long"]
+    },
+    {
+      "id": "org4",
+      "name": "ACM-W",
+      "description": "Supporting women and non-binary students in computing through community and opportunities.",
+      "meeting_days": "Biweekly Mondays",
+      "meeting_time": "6:00 PM - 7:00 PM",
+      "email": "acmw@mail.uc.edu",
+      "category": "CEAS",
+      "img": "/src/assets/acmw.png",
+      "President": ["Ikran Warsame"],
+      "Vice_President": ["Hannah Wilson"],
+      "Advisor": ["Nitin Patel", "Jillian Aurisano"],
+      "Officers": ["Maya Jefferson", "Lana Ortiz"],
+      "Treasurer": ["Grace Park"]
+    },
+    {
+      "id": "org5",
+      "name": "Anime Club",
+      "description": "A community for anime fans to meet, discuss, and enjoy Japanese animation and culture.",
+      "meeting_days": "Fridays",
+      "meeting_time": "7:00 PM - 9:00 PM",
+      "email": "animeclub@mail.uc.edu",
+      "category": "Special Interest",
+      "img": "/src/assets/anime.png",
+      "President": ["Riku Tanaka"],
+      "Vice_President": ["Lena Kim"],
+      "Advisor": ["Professor Ito"],
+      "Officers": ["Ryan Cho", "Ava Martinez"],
+      "Treasurer": ["Owen Brooks"]
+    },
+
+    {
+      "id": "org5",
+      "name": "University of Cincinnati Harry Potter Appreciation Club",
+      "description": "UCHP is a social club for students to make friends and build a community around the beloved Harry Potter series through discussion, activities, and crafts!",
+      "meeting_days": "Mondays",
+      "meeting_time": "7:30 PM - 8:00 PM",
+      "email": "ucharrypotter@mail.uc.edu",
+      "category": "Special Interest",
+      "img": "/src/assets/harrypotter.png",
+      "President": ["Draco Malfoy"],
+      "Vice_President": ["Cedric Diggory"],
+      "Advisor": ["Severus Snape"],
+      "Officers": ["Harry Potter", "Ron Weasley"],
+      "Treasurer": ["Hermione Granger"]
+    }
+  ]
+}]
