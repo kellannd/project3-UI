@@ -172,7 +172,8 @@ textarea {
   border-style: solid;
   border-width: 1px;
   border-color: black;
-  width: 1000px;
+  min-width: 1000px;
+  width: auto;
   height: auto;
   padding: 20px;
 }
@@ -320,3 +321,57 @@ font-weight: lighter
 .my-org-logo {
   height: 80px; margin-top: 10px; margin-left: 10px; padding-right: 10px
 }
+
+  .date-time-input {
+    width: 200px;
+    font-size: 25px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  .req {
+    color: red;
+  }
+
+  .date-time {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .basic-details {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 600px;
+    margin-bottom: 50px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 110px;
+    padding-right: 30px;
+    font-size: 30px;
+  }
+
+  .loc-btn {
+    padding: 10px;
+  }
