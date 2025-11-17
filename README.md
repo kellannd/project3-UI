@@ -1,7 +1,11 @@
 # GetInvolvedUC / 25Live Redesign
 
 ## Project Overview
-overview
+Event planning at the University of Cincinnati is split across two separate platforms. 25Live is used for booking rooms, and GetInvolvedUC is used for posting and managing events. This divided workflow creates significant inefficiencies for students and student organizations.
+
+25Live presents major usability challenges. Students find it unintuitive, slow, and the way status is displayed can be unclear. It is also difficult to view current bookings or understand what events are already occupying a space. On top of that, many of the questions asked in 25Live repeat again in GetInvolvedUC, making the process feel redundant and time-consuming.
+
+While 25Live contains more detailed room information and comprehensive scheduling tools, GetInvolvedUC is cleaner and more familiar to students. This project aims to bridge the gap by integrating 25Live’s core room-booking functionality directly into the GetInvolvedUC interface, creating a unified system where students can book a space and upload event information in a single, streamlined workflow.
 
 ### Link to site
 
