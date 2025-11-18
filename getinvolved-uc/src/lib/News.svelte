@@ -33,7 +33,7 @@
 </script>
 
 <div class="flex-disp" style="flex-direction: column;
-  gap: 25px; max-width: 85%; padding-left: 40px">
+  gap: 25px; max-width: 87%; padding-left: 40px">
 {#each news.news as article}
 
 <div class="article-info">
