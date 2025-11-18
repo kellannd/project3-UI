@@ -14,7 +14,7 @@
 
   let selectedButton = $state("home");
 
-  import acmwlogo from "./assets/acmw.jpg";
+  import acmwlogo from "../public/logosimgs/acmw.jpg";
 
   let createEvent = $state(false);
 

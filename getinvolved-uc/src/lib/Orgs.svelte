@@ -31,10 +31,10 @@ logo: acmwlogo,
 
 
 
+  import acmwlogo from "../../public/logosimgs/acmw.jpg";
   import ccat from "../../public/logosimgs/communityaction.jpg";
   import nsbe from "../../public/logosimgs/nsbe.jpg";
   import aclogo from "../../public/logosimgs/ucanimationclub.jpg";
-  import acmwlogo from "../assets/acmw.jpg";
 
   let logos = [aclogo, acmwlogo]
 </script>
