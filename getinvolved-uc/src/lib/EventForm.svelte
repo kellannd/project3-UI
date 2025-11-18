@@ -220,7 +220,10 @@
               bind:value={eventCatagory}
             >
               <option value=""></option>
-              <option value="1">Catagory 1</option>
+              <option value="1">Academic</option>
+              <option value="2">CEAS Organizations</option>
+              <option value="3">Community Service</option>
+              <option value="4">Cultural</option>
             </select><br /><br /><br />
 
             <label for="perks">Perks:</label>
@@ -233,6 +236,7 @@
               <option value=""></option>
               <option value="food">Free Food</option>
               <option value="merch">Free Merch</option>
+              <option value="service">Community Service Hours</option>
             </select><br /><br /><br />
 
             <label for="event-description"
