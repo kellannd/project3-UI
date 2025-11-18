@@ -316,12 +316,16 @@ textarea {
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 105px;
-    margin-right: 25px;
-    background-color:#f9fafb;
-    border-color: #2196F3;
-    color: #2196F3;
-    border-radius: 5px;
+    margin-top: 125px;
+    margin-right: 190px;
+  background-color: white;
+  color: #1976d2;
+  border-radius: 10px;
+  border-color: #1976d2;
+  border-style: solid;
+  border-width: 4px;
+  font-size: large;
+  font-weight: bold;
   }
 
 .my-org-text {

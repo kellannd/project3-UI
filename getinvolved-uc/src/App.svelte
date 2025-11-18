@@ -8,6 +8,9 @@
   import Sidebar from "./lib/Sidebar.svelte";
   import eventsdata from "./lib/eventsdata.js";
 
+  import ccat from "../public/logosimgs/communityaction.jpg";
+  import aclogo from "../public/logosimgs/ucanimationclub.jpg";
+
 
   let selectedButton = $state("home");
 
@@ -134,7 +137,7 @@
       <div class="home-view">
         <div class="my-orgs">
           <h1>My Organizations</h1>
-          <div class="orgs-list" style="padding-left: 20px">
+          <div class="orgs-list" style="padding-left: 40px">
             <div class="org">
               <img
                 src={acmwlogo}
@@ -148,7 +151,27 @@
             </div>
 
             <div class="org">
-              <h1>acmw</h1>
+              <img
+                src={ccat}
+                class="my-org-logo"
+              />
+              <div class="align-disp">
+                <h2 class="my-org-text">
+                 Community Action Team
+                </h2>
+              </div>
+            </div>
+
+            <div class="org">
+              <img
+                src={aclogo}
+                class="my-org-logo"
+              />
+              <div class="align-disp">
+                <h2 class="my-org-text">
+                  Animation Club
+                </h2>
+              </div>
             </div>
           </div>
         </div>
@@ -217,6 +240,12 @@
     <div class="view">
       <div>
       <h1 class="org-title">Organizations</h1>
+      <div style="margin-left: 37%; margin-top: -20px; margin-bottom: 20px">
+        <div>
+        <label for="search">Search:</label>
+        <input id="search" name="search"/>
+        </div>
+      </div>
       <Orgs />
     </div>
     </div>
