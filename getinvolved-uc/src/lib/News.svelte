@@ -8,7 +8,7 @@
         org: "Bearcats Exercise Science Alliance",
         description:
           "Support BESA at Chiptole's Do Good With Chipotle fundraiser! Join us Sat, Nov 22, 4-8 PM at 2507 Clifton Ave or order pickup. Every meal helps fund BESA events and student opportunities.",
-        img: "../../../public/newimgs/news1.png",
+        img: "/newimgs/news1.png",
       },
       {
        title: "Personal Hygiene Drive",
@@ -17,7 +17,7 @@
         org: "Global Public Health Brigades - UC Chapter",
         description:
           "Come donate for good cause!",
-        img: "../../../public/newimgs/NewsTwo.png",
+        img: "/newimgs/NewsTwo.png",
       },
       {
        title: "Off campus volunteer opportunities!",
@@ -26,7 +26,7 @@
         org: "CEAS AmbassadorsGlobal Public Health Brigades - UC Chapter",
         description:
           "Information and links for upcoming volunteer opportunities opportunities.",
-        img: "../../../public/newimgs/news3.png",
+        img: "/newimgs/news3.png",
       },
     ],
   };
