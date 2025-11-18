@@ -9,16 +9,16 @@ While 25Live contains more detailed room information and comprehensive schedulin
 
 ### Link to site
 
-[New design here!](link)
+[New design here!](https://improved-getinvolveduc.netlify.app/)
 
 ### Demo video link
 
 [Demo link](link)
 
 ### Key Features
-- fill in
-- fill in
-- fill in
+- Integrated Room Booking & Event Creation
+- Real-Time Room Availability & Visual Calendar
+- Enhanced Organization & Event Search
 
 ## Design Process
 
@@ -102,21 +102,31 @@ Using Nielsen’s usability heuristics, we found recurring themes across both sy
 Across all methods, the biggest takeaway was the same: students want a more unified, clearer, and faster way to plan events and reserve spaces, without switching between two separate systems.
 
 
-### Sketching and Wireframing
-![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/added-event-to-calendar.png)
+### Sketching
 
-
-
-#### User Feedback
-fill in for post first deisgn feedback
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/sketches/Screenshot%202025-11-18%20183204.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/sketches/Screenshot%202025-11-18%20183235.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/sketches/Screenshot%202025-11-18%20183300.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/sketches/Screenshot%202025-11-18%20183320.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/sketches/Screenshot%202025-11-18%20183327.png)
 
 
 ## Interface Design
-put screenshots of site here
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/added-event-to-calendar.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-offcampus.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-oncampus.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/eventform-club-2.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/eventform-club.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/eventform.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/locationform-offcampus.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/locationform-oncampus.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/locationform-online.png)
 
 
 #### Future Work
-future work
+Possible next steps include developing a proper database structure to replace the current set of placeholder data. This would allow the system to support real room information, live availability, and persistent event records. Another area of work is creating a mobile-friendly layout and interaction model, since many students access these tools from their phones. Deeper integration with the university’s existing frameworks and APIs is also a major consideration, as this would allow bookings, approvals, and organization data to move between systems without manual input.
+
+Additional possibilities involve expanding the room search and filtering mechanisms to support criteria such as capacity, building, equipment, and scheduling constraints. Improvements to the underlying architecture, such as more consistent data models and clearer interfaces between services, would help reduce redundancy and simplify maintenance. These efforts would move the project toward a more reliable and scalable system that aligns with real campus use cases.
 
 
 
