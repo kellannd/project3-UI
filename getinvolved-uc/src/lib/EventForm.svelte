@@ -164,7 +164,7 @@
     closeNewEvent()
   }}><i class="bi bi-x-lg"></i></button
 ><br />
-<div class="flex-disp">
+<div class="flex-disp" style="margin-left: -125px">
   <div>
     <div class="basic-details">
       <div

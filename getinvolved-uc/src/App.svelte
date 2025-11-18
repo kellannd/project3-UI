@@ -124,7 +124,7 @@
     ],
   })
 
-  const eventId = [2];
+  const eventId = [1, 2];
   const orgEvents = eventsdata.events.filter(event => eventId.includes(event.id));
 </script>
 
@@ -135,6 +135,9 @@
   {#if selectedButton === "home"}
     <div class="view">
       <div class="home-view">
+        <div style=" text-align: center;font-size: 2em; margin-bottom: 20px; margin-left: -160px">
+          <h1>Hello, Ikran!</h1>
+        </div>
         <div class="my-orgs">
           <h1>My Organizations</h1>
           <div class="orgs-list" style="padding-left: 40px">
@@ -182,7 +185,7 @@
           <div style="display: flex; flex-wrap: wrap; padding-left: 40px">
           {#each orgEvents as event}
             <div style=" padding-top: 20px">
-              <div class="event"
+              <div class="event" style="margin-right: 40px"
               >
                 <img src={event.img} style="width: 400px; height: 250px; object-fit: cover; object-position: center;" />
                 <div style="height: 60px">

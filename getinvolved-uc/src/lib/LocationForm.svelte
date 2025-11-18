@@ -56,7 +56,7 @@
 ><br />
 
 <div>
-  <div class="flex-disp">
+  <div class="flex-disp" style="margin-left: -175px">
     <div>
       <div class="location">
         <div class="flex-disp">
