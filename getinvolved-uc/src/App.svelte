@@ -126,7 +126,6 @@
   {:else if selectedButton === "orgs"}
     <div class="orgsection">
       {#if !selectedOrg}
-        <h1>Organizations</h1>
         <div class="grid-view">
           <div class="selections">
             <div class="searchbox">

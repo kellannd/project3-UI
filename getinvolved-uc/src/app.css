@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 300px 1fr; 
   gap: 20px;
-  padding-top: 7%;
+  padding: 3%;
   justify-items: flex-start; 
 }
 
@@ -35,50 +35,46 @@
   flex-direction: column;
 }
 
-.selections{
-  display: block;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #fff;
-  height: 400px;
-  width: 200px;
-  padding: 20%;
-}
 
-
-.searchbox input{
-  width: 700px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 26px;
-}
-
-.category{
+.selections {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  padding: 100px;
+  gap: 15px;       
+  height: auto;     
+  width: 500px;    
+  padding: 50px;    
 }
 
-.category button{
-  background-color: #e0e0e0;
+.category {
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category button {
   border: none;
   border-radius: 20px;
-  padding: 10px;
+  padding: 12px 20px;   
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  width: 100%;           
+  text-align: left;      
 }
 
 .cat-option {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 6px;
   font-size: 30px;
 }
+
+.searchbox input{
+  width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 26px;
+}
+
 
 .org-cards{
   flex: 1;
@@ -99,7 +95,6 @@
 .orglist {
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
   box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12); 
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 15px 25px;
@@ -107,7 +102,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 1600px;      
+  max-width: 800px;      
   margin: auto;           
 }
 
@@ -147,20 +142,19 @@
   display: flex;
   align-items: center;
   justify-content: center; 
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 500;
   color: #494949;
   line-height: 1.5;
-  padding: 20px 40px; 
+  padding: 10px 30px; 
   background-color: #fff;
-  height: 70px;
+  height: 50px;
   width: fit-content;
   margin: 0 auto 5%;
   box-shadow: 
     0px 3px 3px -2px rgba(0, 0, 0, 0.2),
     0px 3px 4px 0px rgba(0, 0, 0, 0.14),
     0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -170,20 +164,16 @@
 .joinbutton{
   background-color: #266fc1;
   color: white;
-  font-size: 30px;
-  padding: 20px;
-  padding-left: 200px;
-  padding-right: 200px;
-  border-radius: 5%;
+  font-size: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: fit-content;
+  height: 50px;
   margin-left: 50%;
 }
 
-
-
-.jbutton:hover{
-  border-color: black;
-  cursor: pointer;
-}
 
 .orgdetcontent{
   display: flex;
@@ -191,10 +181,10 @@
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 3%;}
+  }
 
 .orgheader{
-  font-size: 55px;
+  font-size: 30px;
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
@@ -214,14 +204,14 @@
 }
 
 .DetHeaders{
-  font-size: 45px;
+  font-size: 25px;
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 400;
 }
 
 .description{
-  font-size: 35px;
+  font-size: 20px;
   line-height: 1.6;
   color: black;
   font-weight: 350;
@@ -229,7 +219,7 @@
 }
 
 .addinfo{
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.6;
   color: black;
   font-weight: 350;
@@ -240,7 +230,7 @@
 
 .exec-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 16px;
   margin-top: 12px;
   padding: 10px;
@@ -255,11 +245,11 @@
 }
 
 .role{
-  font-size: 30px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 3px;
 }
 .name{
-  font-size: 25px;
+  font-size: 15px;
 }
 
 
