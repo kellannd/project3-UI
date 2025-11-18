@@ -103,7 +103,8 @@ Across all methods, the biggest takeaway was the same: students want a more unif
 
 
 ### Sketching and Wireframing
-sketches go here
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/added-event-to-calendar.png)
+
 
 
 #### User Feedback
