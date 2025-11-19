@@ -112,7 +112,9 @@ Across all methods, the biggest takeaway was the same: students want a more unif
 
 
 ## Interface Design
-![alt text](https://github.com/kellannd/project3-UI/screenshots/homepage.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/homepage.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/eventspage.png)
+![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/orgpage.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/added-event-to-calendar.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-offcampus.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-oncampus.png)
