@@ -29,28 +29,28 @@ We began by gathering general insights from students who use the University of C
 #### **Questions Asked**
 
 -   What have you used 25Live and/or GetInvolvedUC for in the past?
-    
+
 -   Rate your experience with each system (ease of use, ability to find features, difficulty locating rooms/events).
-    
+
 -   What current struggles do you experience with the systems?
-    
+
 -   What functionality do you feel is missing that would improve your experience?
-    
+
 
 ### **Findings**
 
 -   Students commonly use the systems for finding study rooms, organizing meetings, or browsing campus events.
-    
+
 -   Many described the interfaces as functional but unintuitive, especially when trying to locate available rooms or filter events.
-    
+
 -   Room availability was a major frustration—users often felt uncertain whether a space was actually open.
-    
+
 -   GetInvolvedUC generally felt more modern, but its event filters and forms were described as lengthy or overwhelming.
-    
+
 -   Several users mentioned wishing both systems were connected, since event planning often requires switching back and forth.
-    
+
 -   Students frequently cited slow loading, unclear labels, and too many clicks as barriers to quick use.
-    
+
 
 ### **Interviews**
 
@@ -59,28 +59,28 @@ We conducted a set of informal interviews with students who regularly run meetin
 #### **Questions Asked**
 
 -   How do you typically use 25Live and/or GetInvolvedUC in your role?
-    
+
 -   Which parts of the process feel most frustrating or time-consuming?
-    
+
 -   Which platform feels easier to use, and why?
-    
+
 -   What would make planning or reserving spaces smoother?
-    
+
 -   Are there any ideas from other systems you wish UC used?
-    
+
 
 #### **Findings**
 
 -   Interviewees described event planning as split between two different tools, making the workflow feel scattered.
-    
+
 -   25Live was frequently described as outdated and difficult to navigate, especially for first-time users.
-    
+
 -   The approval process felt slow or unclear; users often didn’t know when something was “truly” approved.
-    
+
 -   GetInvolvedUC was viewed as more approachable, but the event creation process was said to be repetitive.
-    
+
 -   Participants wished information entered in one system could automatically populate in the other.
-    
+
 -   Many referenced other tools they use (Google Calendar, Outlook, EMS) and liked features such as clear visual calendars, drag-and-drop scheduling, and quicker confirmations.
 
 ### **Heuristic Evaluation Summary**
@@ -88,17 +88,17 @@ We conducted a set of informal interviews with students who regularly run meetin
 Using Nielsen’s usability heuristics, we found recurring themes across both systems:
 
 -   **Low visibility of system status:** Slow responses with minimal feedback.
-    
+
 -   **Non-student-friendly language:** 25Live uses facility management terms unfamiliar to most users.
-    
+
 -   **Limited control and flexibility:** Editing submissions or rebooking recurrent events is harder than it should be.
-    
+
 -   **Inconsistencies and clutter:** 25Live pages feel dense and outdated; GetInvolvedUC is cleaner but still crowded in places.
-    
+
 -   **Weak error messaging:** Errors often appear without clear explanation or instructions.
-    
+
 -   **Minimal in-platform guidance:** Most help exists as external PDFs rather than built-in support.
-    
+
 Across all methods, the biggest takeaway was the same: students want a more unified, clearer, and faster way to plan events and reserve spaces, without switching between two separate systems.
 
 
@@ -112,6 +112,7 @@ Across all methods, the biggest takeaway was the same: students want a more unif
 
 
 ## Interface Design
+![alt text](https://github.com/kellannd/project3-UI/screenshots/homepage.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/added-event-to-calendar.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-offcampus.png)
 ![alt text](https://github.com/kellannd/project3-UI/blob/faith/screenshots/addedlocation-oncampus.png)
