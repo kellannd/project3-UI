@@ -128,6 +128,10 @@ Possible next steps include developing a proper database structure to replace th
 
 Additional possibilities involve expanding the room search and filtering mechanisms to support criteria such as capacity, building, equipment, and scheduling constraints. Improvements to the underlying architecture, such as more consistent data models and clearer interfaces between services, would help reduce redundancy and simplify maintenance. These efforts would move the project toward a more reliable and scalable system that aligns with real campus use cases.
 
+In addition, features for collaborative event planning could be included so that editing can happen across multiple users or “officers” of an organization.
+
+
+
 
 
 
