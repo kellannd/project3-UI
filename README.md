@@ -13,7 +13,7 @@ While 25Live contains more detailed room information and comprehensive schedulin
 
 ### Demo video link
 
-[Demo link](link)
+[Demo link](https://drive.google.com/file/d/1mrIPGzpF-oxufHXFVvz0KEkt87hqx3FU/view?usp=sharing)
 
 ### Key Features
 - Integrated Room Booking & Event Creation
